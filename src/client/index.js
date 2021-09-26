@@ -7,6 +7,7 @@ import './styles/form.scss'
 import './styles/footer.scss'
 import './styles/base.scss'
 import './styles/nav.scss'
+import '../../public/logo2.png'
 
 console.log(checkForName)
 
