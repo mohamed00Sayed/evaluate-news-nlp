@@ -1,7 +1,10 @@
+$body-background: #fafbfc;
+
 @mixin body-mixin{
   display: flex;
   flex-direction: column;
   min-height: 100vh;  
+  background-color: $body-background;
 }
 
 body {

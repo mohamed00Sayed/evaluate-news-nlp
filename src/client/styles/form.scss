@@ -1,19 +1,34 @@
+$button-background: #b4e3a6;
+$button-hover: #e9f5e6;
+$body-background: #fafbfc;
+
 %form-holder{
   border: 1px solid #545454;
   border-radius: 3px;
   padding: 40px;  
 }
 
+%input-styles{
+  padding: 5px 20px;
+  width: 100%;
+  line-height: 16px;
+  margin: 10px 0;
+}
+
 form {
   @extend %form-holder;
-  input {
-    padding: 5px 20px;
-    width: 100%;
-    line-height: 16px;
-    margin: 10px 0;
+  input[type='submit'] {
+    @extend %input-styles;
+    background-color: $button-background;
+    &:hover{
+      background-color: $button-hover;
+      cursor: pointer;
+    }
   }
   
   input[type='text']{
+    @extend %input-styles;
+    background-color: $body-background;
     box-sizing: border-box;
     border-width: 2px;
   }
