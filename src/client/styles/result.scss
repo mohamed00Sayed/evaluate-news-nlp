@@ -1,0 +1,41 @@
+.margin-bottom-20 {
+  margin-bottom: 20px;
+  clear: both;
+}
+
+.panel-blue {
+  border-color: #3498db;
+}
+
+.panel{
+  border-radius: 0;
+  background-color: #fff;
+  border: 1px solid #3498db;
+  border-radius: 4px;
+}
+
+.panel-blue{
+  .panel-heading {
+    background: #3498db;
+  }
+}
+
+.panel-heading {
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 0;
+}
+
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: inherit;
+}
+
+h3{
+  text-shadow: none;
+  font-weight: 400;
+  font-family: 'Open Sans',Arial,sans-serif;
+}
+
