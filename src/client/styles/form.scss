@@ -1,9 +1,10 @@
-$button-background: #b4e3a6;
+$button-background: #3498db;
 $button-hover: #e9f5e6;
 $body-background: #fafbfc;
 
 %form-holder{
-  border: 1px solid #545454;
+  background-color: white;
+  border: 1px solid #3498db;
   border-radius: 3px;
   padding: 40px;  
 }
@@ -24,6 +25,7 @@ form {
       background-color: $button-hover;
       cursor: pointer;
     }
+    border-radius: 5px;
   }
   
   input[type='text']{

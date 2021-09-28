@@ -9,6 +9,7 @@ $body-background: #fafbfc;
 
 body {
   @include body-mixin;
+  font-family: 'Open Sans',Arial,sans-serif;
   main {
     flex: 2;
   }
