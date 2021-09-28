@@ -31,7 +31,7 @@
         <main>
             <section>
                 <form class="" onsubmit="return Client.handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Enter URL for its content analysis">
+                    <input id="name" type="text" name="input" value=""  placeholder="Enter URL for its content analysis">
                     <input type="submit" name="" value="Analyze" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
                 </form>
             </section>
@@ -69,6 +69,14 @@
         </div>
       </div>
     </footer>
-  
+    <script>
+     // Check that service workers are supported
+     if ('serviceWorker' in navigator) {
+         // Use the window load event to keep the page load performant
+         window.addEventListener('load', () => {
+             navigator.serviceWorker.register('/service-worker.js');
+         });
+     }
+    </script>
     </body>
 </html>
