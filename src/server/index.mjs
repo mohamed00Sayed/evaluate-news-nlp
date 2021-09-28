@@ -40,7 +40,12 @@ app.post('/analyze', async (req, res)=> {
     
     const data = await response.json()
     console.log(data)
-    res.send(data)
+    res.json({
+      agreement: data.agreement,
+      subjectivity: data.subjectivity,
+      confidence: data.confidence,
+      irony: data.irony
+    })
 })
 
 
