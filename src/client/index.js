@@ -1,5 +1,9 @@
 import { checkURL } from './js/urlChecker'
 import { handleSubmit } from './js/formHandler'
+import { create } from './js/Creator'
+import { MissingRequiredException, NotSpecificTypeException } from './js/Exceptions'
+import { createTemplateResults, createTableBody } from './js/createTemplate'
+
 
 import './styles/resets.scss'
 import './styles/header.scss'
@@ -13,5 +17,10 @@ import '../../public/logo2.png'
 
 export {
   checkURL,
-  handleSubmit
+  handleSubmit,
+  create,
+  MissingRequiredException,
+  NotSpecificTypeException,
+  createTemplateResults,
+  createTableBody
 }
