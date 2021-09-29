@@ -22,10 +22,9 @@ app.use(cors())
 
 app.use(express.static('dist'))
 
-
-app.get('/', function (req, res) {
-    // res.sendFile('dist/index.html')
-    res.sendFile(path.resolve('dist/index.html'))
+app.get('*', function (req, res) {
+  const index = path.join(__dirname, 'build', 'index.html')
+  res.sendFile(index)
 })
 
 // designates what port the app will listen to for incoming requests
