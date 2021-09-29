@@ -11,7 +11,10 @@
   "jest": {
     "collectCoverage": true
   },
-  "keywords": [],
+  "engines": {
+    "node": "13.14.0"
+  },
+  "keywords": ["heroku"],
   "author": "",
   "license": "ISC",
   "description": "",
