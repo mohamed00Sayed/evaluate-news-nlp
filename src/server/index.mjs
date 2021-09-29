@@ -5,9 +5,7 @@ import express from 'express'
 import bodyParser from 'body-parser'
 import cors from 'cors'
 
-import { fileURLToPath } from 'url'
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
+
 
 dotenv.config()
 
@@ -27,7 +25,7 @@ app.use(cors())
 app.use(express.static('dist'))
 
 app.get('*', function (req, res) {
-  const index = path.join(__dirname, 'dist', 'index.html')
+  const index = path.join('dist', 'index.html')
   res.sendFile(index)
 })
 
