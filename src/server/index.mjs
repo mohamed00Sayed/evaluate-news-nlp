@@ -5,8 +5,6 @@ import express from 'express'
 import bodyParser from 'body-parser'
 import cors from 'cors'
 
-
-
 dotenv.config()
 
 //const mockAPIResponse = require('./mockAPI.js')
@@ -24,9 +22,10 @@ app.use(cors())
 
 app.use(express.static('dist'))
 
-app.get('*', function (req, res) {
-  const index = path.join('dist', 'index.html')
-  res.sendFile(index)
+
+app.get('/', function (req, res) {
+    // res.sendFile('dist/index.html')
+    res.sendFile(path.resolve('dist/index.html'))
 })
 
 // designates what port the app will listen to for incoming requests
